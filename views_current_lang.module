@@ -1,0 +1,36 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function views_current_lang_views_api() {
+  return array(
+    'api' => 3,
+  );
+}
+
+/**
+ * Implements hook_autoload_info().
+ */
+function views_current_lang_autoload_info() {
+  return array(
+    'views_current_lang_handler_field_language' => 'views_current_lang_handler_field_language.inc',
+  );
+}
+
+/**
+ * Implements hook_views_data().
+ */
+function views_current_lang_views_data() {
+  $data['views']['current_language'] = array(
+    'title' => t('Current language'),
+    'help' => t('Displays the current language code, name or prefix.'),
+    'field' => array(
+      'handler' => 'views_current_lang_handler_field_language',
+    ),
+  );
+  return $data;
+}
