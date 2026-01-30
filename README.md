@@ -14,7 +14,7 @@ Provided values via *Global: Current language* are:
   often but not always same as language code)
 
 Core provides views filters and contextual filters for the currently active
-langugage, but does not provide the current UI language as a views field.
+language, but does not provide the current UI language as a views *field*.
 
 ## Installation
 
