@@ -1,11 +1,11 @@
 <?php
 /**
  * @file
- * Field handler to display a global value related to current language.
+ * Field handler to display values related to current user interface language.
  */
 
 /**
- * Provide a property of currently active UI language as field value.
+ * Provide a property of currently active UI language.
  */
 class views_current_lang_handler_field_language extends views_handler_field {
 
