@@ -1,5 +1,5 @@
 name = Views Field Current Language
-description = Provides a Views field handler to display a properties related to the current UI language.
+description = Provides a Views field handler to display properties related to the current UI language.
 backdrop = 1.x
 type = module
 dependencies[] = views
