@@ -1,11 +1,12 @@
 <?php
+
 /**
  * @file
  * Hook implementations of the Views Field Current Language module.
  */
 
 /**
- * Implements hook_views_api().
+ * Implementsxxxx hook_views_api().
  */
 function views_current_lang_views_api() {
   return array(
