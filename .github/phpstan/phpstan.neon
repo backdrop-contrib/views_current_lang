@@ -1,7 +1,7 @@
 parameters:
   level: 5
   scanDirectories:
-    - ../../core
+    - ../../../../core
   fileExtensions:
     - php
     - module

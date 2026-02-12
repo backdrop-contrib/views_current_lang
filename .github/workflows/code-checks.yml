@@ -1,9 +1,12 @@
 name: PHPStan
 on: [pull_request]
 jobs:
-  coding_standards:
+  code_analysis:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - name: Run PHPStan
         uses: indigoxela/gha_experiments/actions/phpstan@main
+        with:
+          php_version: "8.5"
+          config_path: ".github/phpstan/phpstan.neon"
