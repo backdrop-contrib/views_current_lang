@@ -10,3 +10,4 @@ jobs:
         with:
           php_version: "8.5"
           config_path: ".github/phpstan/phpstan.neon"
+          module_dependencies: "foobarnotexistthisrepo"
