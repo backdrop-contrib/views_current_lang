@@ -8,6 +8,4 @@ jobs:
       - name: Run PHPStan
         uses: indigoxela/gha_experiments/actions/phpstan@main
         with:
-          php_version: "8.5"
           config_path: ".github/phpstan/phpstan.neon"
-          module_dependencies: "fileusage_fixer"
