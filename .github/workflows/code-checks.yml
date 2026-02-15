@@ -2,14 +2,10 @@ name: PHPStan
 on: [pull_request]
 jobs:
   code_analysis:
+    name: Debug
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - name: Debug
         run: |
           echo ${{fromJson(github)}}
-
-      - name: Run PHPStan
-        uses: indigoxela/gha_experiments/actions/phpstan@main
-        with:
-          config_path: ".github/phpstan/phpstan.neon"
