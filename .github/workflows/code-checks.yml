@@ -7,8 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - shell: bash
-      env:
-        JSON_DOC: ${{ toJSON(some.var) }}
       run: |
-        printf '%s\n' "$JSON_DOC" > foo.json
-        cat foo.json
+        echo 'Inputs: ${{ toJson(github) }}'
