@@ -6,6 +6,9 @@ jobs:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
-    - shell: bash
-      run: |
-        echo 'Inputs: ${{ toJson(github) }}'
+      - shell: bash
+        run: |
+          echo 'Inputs: ${{ toJson(github) }}'
+
+      - name: Run PHP_CodeSniffer
+        uses: indigoxela/gha_experiments/actions/phpcs_full@main
