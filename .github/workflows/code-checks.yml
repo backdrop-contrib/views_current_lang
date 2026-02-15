@@ -6,5 +6,9 @@ jobs:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
-      - name: Debug
-        run: echo ${{ github }}
+    - shell: bash
+      env:
+        JSON_DOC: ${{ toJSON(some.var) }}
+      run: |
+        printf '%s\n' "$JSON_DOC" > foo.json
+        cat foo.json
