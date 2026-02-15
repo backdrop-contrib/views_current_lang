@@ -5,6 +5,10 @@ jobs:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
+      - name: Debug
+        run: |
+          echo ${{fromJson(github)}}
+
       - name: Run PHPStan
         uses: indigoxela/gha_experiments/actions/phpstan@main
         with:
