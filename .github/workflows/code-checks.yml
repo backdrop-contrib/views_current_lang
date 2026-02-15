@@ -1,14 +1,9 @@
-name: PHPStan
+name: Coding standards
 on: [pull_request]
 jobs:
-  code_analysis:
-    name: Debug
+  coding_standards:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        run: |
-          echo 'Inputs: ${{ toJson(github) }}'
-
       - name: Run PHP_CodeSniffer
         uses: indigoxela/gha_experiments/actions/phpcs_full@main
