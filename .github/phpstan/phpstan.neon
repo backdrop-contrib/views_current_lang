@@ -1,9 +1,0 @@
-parameters:
-  level: 5
-  scanDirectories:
-    - ../../../../core
-  fileExtensions:
-    - php
-    - module
-    - inc
-    - install

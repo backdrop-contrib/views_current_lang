@@ -1,6 +1,6 @@
 /**
  * @file
- * Backdrop behavior attached to filter_admin_format_form.
+ * Backdrop behavior.
  */
 (function ($, Backdrop) {
 
@@ -17,4 +17,3 @@ Backdrop.behaviors.someBehavior = {
 };
 
 })(jQuery, Backdrop);
-   
