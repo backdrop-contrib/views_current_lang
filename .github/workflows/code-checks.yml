@@ -1,9 +1,9 @@
-name: Simpletest
+name: JSHint
 on: [pull_request]
 jobs:
-  functional_test:
+  js_linter:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
-      - name: Run Tests
-        uses: indigoxela/gha_experiments/actions/simpletest@main
+      - name: Run JSHint
+        uses: indigoxela/gha_experiments/actions/jshint@main
