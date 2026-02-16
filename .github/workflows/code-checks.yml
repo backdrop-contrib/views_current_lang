@@ -1,9 +1,9 @@
-name: PHPStan
+name: Simpletest
 on: [pull_request]
 jobs:
-  code_check:
+  functional_test:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
-      - name: Run PHPStan
-        uses: indigoxela/gha_experiments/actions/phpstan@main
+      - name: Run Tests
+        uses: indigoxela/gha_experiments/actions/simpletest@main
