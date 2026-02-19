@@ -1,9 +1,9 @@
-name: JSHint
+name: Coding standards
 on: [pull_request]
 jobs:
-  js_linter:
+  coding_standards:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
-      - name: Run JSHint
-        uses: indigoxela/gha_experiments/actions/jshint@main
+      - name: Run PHP_CodeSniffer
+        uses: indigoxela/gha_experiments/actions/phpcs_full@main

@@ -1,0 +1,16 @@
+name: Simpletest
+on: [pull_request]
+jobs:
+  functional_test:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-versions: ['7.4', '8.5']
+
+    steps:
+      - name: Run Tests
+        uses: indigoxela/gha_experiments/actions/simpletest@main
+        with:
+          php_version: ${{ matrix.php-versions }}
